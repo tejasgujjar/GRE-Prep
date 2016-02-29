@@ -1,0 +1,28 @@
+.ui-page { 
+background-image: -webkit-gradient(linear, left bottom, right top, from(black), to(grey), color-stop(100%, white ) ) !important;
+}
+.ui-body-a{
+	background-image: -webkit-gradient(linear, left bottom, right top, from(black), to(grey), color-stop(100%, white ) ) !important;
+}
+.ui-content {
+    background-color: #C299AD !important; 
+     background-size: 100%;
+    color: black;
+}
+
+.fltRight{
+	float: right;
+}
+.fltLeft{
+	float: left;
+}
+/*Added CSS for pop ups*/
+.displaynone{display: none;}
+
+.displayWordCSS{
+	position: relative;
+	top: 40%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}

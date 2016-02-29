@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/jquery.mobile-1.4.4.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen"/>
+		
+		<title>WordList</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.4.js"></script>
+		<script type="text/javascript" src="js/jquery.blockUI_2.66.js"></script>
+		<script type="text/javascript" src="js/function.js"></script>
+<!-- <script>
+$(document).ready(function()
+{
+			setTimeout(function(){
+				/* window.location = "main.html"; */
+				alert("test");
+			}, 3000);
+		});
+</script> -->
+</head>
+<body>
+	<div id="mainpage"  data-role="page" data-theme="a">
+		<div style="background-color: #660033;color: white;" data-role="header" data-position="inline">
+			<a href="#addMem_popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" data-role="button" data-icon="home" data-iconpos="notext" data-theme="a" data-inline="true" class="fltLeft ui-link ui-btn ui-btn-a ui-icon-plus ui-btn-icon-right ui-btn-inline ui-shadow ui-corner-all" role="button">Add New Word</a>
+			<h6>Tap to change word</h6>
+		</div>
+		<div id="contentDiv" data-role="content">
+				<div data-role="popup" id="addMem_popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="true" style="max-width:400px;">
+	   				<div data-role="header" data-theme="a">
+	    				<h1>Add Word</h1>
+	    			</div>
+	    			<div role="main" class="ui-content">
+				   		<input id="newWord" type="text" placeholder="Enter New Word">
+				        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Cancel</a>
+				        <button id="submitWord"  style="float: right;" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a">OK</button>
+	    			</div>
+				</div>
+				
+			<div class="displayWordCSS" id="displayWord">AFFABLE</div>
+		</div>
+	</div>
+</body>
+</html>
